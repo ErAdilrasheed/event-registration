@@ -76,7 +76,7 @@ const EventForm = () => {
     try {
       const pdfBase64 = await generatePDFBase64()
 
-      await axios.post('https://adil-event-registration.onrender.com', {
+      await axios.post('https://adil-event-registration.onrender.com/submit', {
         ...formData,
         formId: newFormId,
         pdfBase64,
