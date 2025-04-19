@@ -12,12 +12,10 @@ const app = express()
 
 // Middleware
 const cors = require('cors')
-app.use(
-  cors({
+app.use(dcors({
     origin: 'https://adil-event-registration.vercel.app',
     methods: ['POST', 'GET'],
-  })
-)
+  }))
 app.use(express.json({ limit: '50mb' })) // handle larger payloads
 app.use(express.urlencoded({ extended: true, limit: '50mb' }))
 
