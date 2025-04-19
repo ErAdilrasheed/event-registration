@@ -11,7 +11,13 @@ const sendMail = require('./utils/mailer')
 const app = express()
 
 // Middleware
-app.use(cors())
+const cors = require('cors')
+app.use(
+  cors({
+    origin: 'https://adil-event-registration.vercel.app',
+    methods: ['POST', 'GET'],
+  })
+)
 app.use(express.json({ limit: '50mb' })) // handle larger payloads
 app.use(express.urlencoded({ extended: true, limit: '50mb' }))
 
