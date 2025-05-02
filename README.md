@@ -1,5 +1,3 @@
-No problem! Here's an updated and professional **README** for your **Event Registration Form project** built using **React, Express, Node.js, and MongoDB (MERN stack):**
-
 ---
 
 # 📝 Event Registration App (MERN Stack)
